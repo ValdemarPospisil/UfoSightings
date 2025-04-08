@@ -4,4 +4,4 @@ matplotlib
 seaborn
 tabulate
 wordcloud
-
+scikit-learn
