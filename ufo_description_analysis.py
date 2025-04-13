@@ -122,7 +122,7 @@ plt.title("Word Frequency in UFO Sighting Descriptions by Shape", fontsize=16)
 plt.xlabel("Words", fontsize=14)
 plt.ylabel("UFO Shape", fontsize=14)
 plt.tight_layout()
-plt.savefig("ufo_description_analysis.png")
+plt.savefig("images/ufo_description_analysis.png")
 print("\nVisualization saved as 'ufo_description_analysis.png'")
 
 # Create word cloud alternative visualization
@@ -159,7 +159,7 @@ try:
         axes[i].axis('off')
     
     plt.tight_layout()
-    plt.savefig("ufo_shape_wordclouds.png")
+    plt.savefig("images/ufo_shape_wordclouds.png")
     print("Word cloud visualization saved as 'ufo_shape_wordclouds.png'")
 except ImportError:
     print("WordCloud package not found. Skipping word cloud visualization.")

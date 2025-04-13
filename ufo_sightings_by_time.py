@@ -27,7 +27,7 @@ SELECT
     CASE
         WHEN t.hour >= 5 AND t.hour < 12 THEN 'Morning'
         WHEN t.hour >= 12 AND t.hour < 17 THEN 'Afternoon' 
-        WHEN t.hour >= 17 AND t.hour < 21 THEN 'Evening'
+        WHEN t.hour >= 17 AND t.hour < 22 THEN 'Evening'
         ELSE 'Night'
     END AS time_of_day,
     COUNT(*) AS sightings_count
@@ -81,7 +81,7 @@ plt.title("UFO Sightings by Month and Time of Day", fontsize=16)
 plt.xlabel("Time of Day", fontsize=12)
 plt.ylabel("Month", fontsize=12)
 plt.tight_layout()
-plt.savefig("ufo_sightings_by_time.png")
+plt.savefig("images/ufo_sightings_by_time.png")
 print("\nVisualization saved as 'ufo_sightings_by_time.png'")
 
 # Close connection

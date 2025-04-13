@@ -64,7 +64,7 @@ for i, row in enumerate(df.itertuples()):
     )
 
 plt.tight_layout()
-plt.savefig("ufo_encounter_duration.png")
+plt.savefig("images/ufo_encounter_duration.png")
 print("\nVisualization saved as 'ufo_encounter_duration.png'")
 
 # Close connection
