@@ -5,3 +5,6 @@ seaborn
 tabulate
 wordcloud
 scikit-learn
+mlxtend
+folium
+plotly
