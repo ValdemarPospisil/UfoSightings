@@ -79,7 +79,7 @@ for k in k_range:
     inertia.append(kmeans.inertia_)
 
 # Select final number of clusters
-k = 5  # You can adjust based on elbow plot
+k = 5 
 kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
 clusters = kmeans.fit_predict(scaled_features)
 

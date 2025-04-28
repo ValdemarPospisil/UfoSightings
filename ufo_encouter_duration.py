@@ -11,7 +11,7 @@ con = duckdb.connect("ufo.db")
 query = """
 SELECT 
     d.ufo_shape,
-    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY f.length_of_encounter_seconds)::INTEGER AS median_seconds,
+    MEDIAN(f.length_of_encounter_seconds)::INTEGER AS median_seconds,
     COUNT(*) AS sightings_count,
     AVG(f.length_of_encounter_seconds)::INTEGER AS avg_seconds
 FROM fact_sightings f
